@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 安装运行时依赖
+        run: pip install -r requirements.txt
+      - name: 编译检查
+        run: python -m compileall -q defendops
+      - name: 单元测试（零模型依赖，mock LLM 跑通 ReAct）
+        run: python -m unittest discover -s tests -v

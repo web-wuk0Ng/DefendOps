@@ -1,0 +1,18 @@
+{
+  "id": "ALT-20261119-0042",
+  "title": "SSH 暴力破解告警：外部 IP 多次失败登录 root",
+  "source": "Wazuh",
+  "severity": "high",
+  "timestamp": "2026-11-19T19:58:03+08:00",
+  "assets": ["web-prod-01 (10.0.2.15)"],
+  "raw": {
+    "rule_id": "5710",
+    "src_ip": "185.220.101.7",
+    "dst_ip": "10.0.2.15",
+    "username": "root",
+    "failed_attempts": 87,
+    "window_minutes": 5,
+    "geo": "Germany",
+    "message": "Failed password for root from 185.220.101.7 port 54321 ssh2; 87 attempts in 5 minutes"
+  }
+}

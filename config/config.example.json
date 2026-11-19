@@ -1,0 +1,15 @@
+{
+  "llm": {
+    "provider": "deepseek",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key": "",
+    "model": "deepseek-chat",
+    "temperature": 0.1,
+    "timeout": 60,
+    "max_retries": 2
+  },
+  "agent": {
+    "max_rounds": 8,
+    "language": "zh-CN"
+  }
+}

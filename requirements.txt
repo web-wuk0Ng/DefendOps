@@ -1,0 +1,2 @@
+# LLM SDK (OpenAI 兼容，覆盖 DeepSeek/通义/Kimi/智谱/混元/Ollama 等)
+openai>=1.30.0

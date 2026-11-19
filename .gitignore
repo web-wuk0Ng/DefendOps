@@ -1,0 +1,23 @@
+# 依赖与缓存
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# 本地真实配置（含密钥，绝不入库）
+config/config.json
+config/*.local.json
+.env
+
+# 运行产物
+data/*.db
+*.log
+reports/out/
+
+# 编辑器 / 系统 / 项目数据
+.DS_Store
+.idea/
+.vscode/
+.workbuddy/
